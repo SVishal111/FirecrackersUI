@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+.textContainer {
+    height: 100%;
+    width: 100%;
+    background: url("https://i.pinimg.com/736x/0a/ac/d0/0aacd012dc2169bb1894b4a976028e68.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: chartreuse;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBox {
+    height: 500px;
+    width: 1500px;
+    /* background-color: blue; */
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 68, 0, 0.6));
+
+    border-radius: 15px;
+    border: 2px solid orange;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    padding: 5px;
+}
+
+.textBox h1 {
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 0.8px;
+    top: 10px;
+}
+
+.textBox .text {
+    font-size: 30px;
+    font-weight: 600;
+    width: 40%;
+    text-align: center;
+
+    margin: 90px 0px 50px;
+}
+
+.textBox .contact a {
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.textBox .contact a:hover {
+    color: rgb(0, 0, 109);
+}
+
+@media(max-width:1250px) {
+    .textBox .text {
+        width: 60%;
+    }
+}
+
+@media(max-width:960px) {
+    .textBox .text {
+        width: 80%;
+    }
+}
+
+@media(max-width:650px) {
+    .textBox .text {
+        width: 95%;
+    }
+}
+
+@media(max-width:400px) {
+    .textBox h1 {
+        font-size: 35px;
+    }
+
+    .textBox .text {
+        font-size: 24px;
+    }
+
+    .textBox .contact a {
+        font-size: 22px;
+    }
+}
